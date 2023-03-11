@@ -1,0 +1,138 @@
+.product {
+    display: block;
+    height: 100%;
+}
+
+.productWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImage {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.productImageItem {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.productInfoTop, .productInfoBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.productInfoTop {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145%;
+    color: #122947;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.productInfoTop .productInfoItem:first-child {
+    display: flex;
+    flex: 0 1 75%;
+    justify-content: flex-start;
+}
+.productInfoTop .productInfoItem:last-child {
+    display: flex;
+    flex: 0 1 25%;
+    justify-content: flex-end;
+}
+
+.productInfoBottom .productInfoItem {
+    display: flex;
+    flex: 0 0 50%;
+}
+
+.productInfoBottom .productInfoItem:first-child{
+    justify-content: flex-start;
+}
+
+.productInfoBottom .productInfoItem:last-child{
+    justify-content: flex-end;
+}
+
+.productInfoBottom {
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 145%;
+    color: #9A9DA0;
+}
+
+@media screen and (max-width: 1200px) {
+    .productTitle {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .productImage {
+        height: 130px;
+    }
+    .productTitle {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .productImage {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .productInfoTop {
+        flex-direction: column;
+        min-height: 180px;
+        height: max-content;
+        margin-bottom: 20px;
+        flex: 0 0 100px;
+    }
+    .productPrice {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .productTitle {
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .productInfoBottom {
+        flex-direction: column;
+    }
+    .productRate {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .productCount {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .productImage {
+        height: 80px;
+    }
+}

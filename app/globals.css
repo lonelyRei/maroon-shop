@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Mplus 1p";
+    src: url('../public/fonts/mplus/MPLUS1p-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../public/fonts/raleway/Raleway-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1900px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.blockTitle {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 1 auto;
+}
+
+.customButton {
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #122947;
+    display: block;
+    padding: 14px 33px;
+    width: 170px;
+    border: 1px solid #B3BAC1;
+    border-radius: 2px;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 360px) {
+
+}

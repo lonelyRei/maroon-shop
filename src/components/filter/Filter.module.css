@@ -1,0 +1,52 @@
+.filter {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.filterTop {
+    display: flex;
+    justify-content: center;
+}
+
+.filterColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterBtn:first-child {
+    margin-right: 30px;
+}
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1080px) {
+    .filter {
+        flex-direction: column;
+    }
+    .filterTop {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filterTop label span:nth-child(2) {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+}

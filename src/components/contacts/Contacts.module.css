@@ -1,0 +1,131 @@
+.contacts {
+    margin-bottom: 140px;
+}
+
+.contactsOuter {
+    position: relative;
+    width: 50%;
+    background: #F4F1ED;
+    padding: 100px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    color: #122947;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    display: block;
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    color: #122947;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #122947;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.socialsLink {
+    margin-right: 30px;
+}
+
+.socialsLink:last-child {
+    margin-right: 0;
+}
+
+.map {
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    right: -50%;
+    top: calc(50% - 200px);
+}
+
+.map img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .contacts {
+        margin-bottom: 120px;
+    }
+    .map {
+        height: 300px;
+        width: 500px;
+        right: -60%;
+        top: calc(50% - 150px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        margin-bottom: 100px;
+    }
+    .map {
+        height: 200px;
+        width: 400px;
+        top: calc(50% - 100px);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .contacts {
+        margin-bottom: 80px;
+    }
+    .map {
+        width: 300px;
+        right: -55%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .map {
+        display: none;
+    }
+    .contactsOuter {
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts {
+        margin-bottom: 60px;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contacts {
+        margin-bottom: 40px;
+    }
+}
