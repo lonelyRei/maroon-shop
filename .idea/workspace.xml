@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара" />
+    <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара">
+      <change afterPath="$PROJECT_DIR$/app/card/card.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/shops/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/card/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/card/card.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/card/cardItem/CardItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/card/cardItem/cardItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/cardStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ReactQueryWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ReactQueryWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/card/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/card/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/types.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contacts/Contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/Contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/follow/follow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/follow/follow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recentlyWatched/RecentlyWatched.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recentlyWatched/RecentlyWatched.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/recentlyWatchedStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/recentlyWatchedStore.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +80,8 @@
       <updated>1678369875055</updated>
       <workItem from="1678369876205" duration="7978000" />
       <workItem from="1678452789638" duration="32455000" />
-      <workItem from="1678522746203" duration="22790000" />
+      <workItem from="1678522746203" duration="24276000" />
+      <workItem from="1678601524649" duration="8545000" />
     </task>
     <task id="LOCAL-00001" summary="Страница отдельного товара">
       <created>1678564293873</created>

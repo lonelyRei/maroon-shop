@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { IProductResponse } from '@/src/API/types'
 
-const recentlyWatchedProducts: string = 'recentlyWatchedProducts'
+const RECENTLY_WATCHED_PRODUCTS: string = 'RECENTLY_WATCHED_PRODUCTS'
 interface IRecentlyWatchedStore {
     recentlyWatched: IProductResponse[]
     addRecentlyWatched: (product: IProductResponse) => void
@@ -14,12 +14,12 @@ const useRecentlyWatchedStore = create<IRecentlyWatchedStore>((set, get) => ({
         set({
             recentlyWatched: [...get().recentlyWatched.filter((mapElement) => mapElement.id !== element.id), element],
         })
-        localStorage.setItem(recentlyWatchedProducts, JSON.stringify(get().recentlyWatched))
+        localStorage.setItem(RECENTLY_WATCHED_PRODUCTS, JSON.stringify(get().recentlyWatched))
     },
     loadRecentlyWatchedFromLocalStore: () => {
-        localStorage.getItem(recentlyWatchedProducts)
+        localStorage.getItem(RECENTLY_WATCHED_PRODUCTS)
             ? set({
-                  recentlyWatched: JSON.parse(localStorage.getItem(recentlyWatchedProducts)!),
+                  recentlyWatched: JSON.parse(localStorage.getItem(RECENTLY_WATCHED_PRODUCTS)!),
               })
             : set({ recentlyWatched: get().recentlyWatched })
 

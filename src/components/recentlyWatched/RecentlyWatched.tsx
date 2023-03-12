@@ -3,19 +3,10 @@
 import useRecentlyWatchedStore from '@/src/stores/recentlyWatchedStore'
 import styles from './RecentlyWatched.module.css'
 import RecentlyWatchedInner from '@/src/components/recentlyWatched/recentlyWatchedInner'
-import React, { useEffect, useState } from 'react'
-import { IProductResponse } from '@/src/API/types'
+import React from 'react'
 
 const RecentlyWatched: React.FC<IRecentlyWatched> = ({ title }: IRecentlyWatched) => {
-    const loadRecentlyWatchedFromLocalStore = useRecentlyWatchedStore(
-        (state) => state.loadRecentlyWatchedFromLocalStore
-    )
-
-    const [recentlyWatched, setRecentlyWatched] = useState<IProductResponse[]>([])
-
-    useEffect(() => {
-        setRecentlyWatched(loadRecentlyWatchedFromLocalStore())
-    }, [])
+    const recentlyWatched = useRecentlyWatchedStore((store) => store.recentlyWatched)
 
     return (
         <div className={styles.recently}>

@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 import Link from 'next/link'
-import { footerNavItems, INavItem } from '@/src/components/common/types'
+import { authorGithubLink, footerNavItems, INavItem } from '@/src/components/common/types'
 export const FooterComponent = () => {
     return (
         <footer className={styles.footer}>
@@ -19,13 +19,13 @@ export const FooterComponent = () => {
                         })}
                     </div>
                     <div className={styles.footerSocials}>
-                        <a href="/" className={styles.footerSocialsLink}>
+                        <a target={'_blank'} href={authorGithubLink} className={styles.footerSocialsLink}>
                             <img src="/images/footer/facebook.svg" alt="" />
                         </a>
-                        <a href="/" className={styles.footerSocialsLink}>
+                        <a target={'_blank'} href={authorGithubLink} className={styles.footerSocialsLink}>
                             <img src="/images/footer/instagram.svg" alt="" />
                         </a>
-                        <a href="/" className={styles.footerSocialsLink}>
+                        <a target={'_blank'} href={authorGithubLink} className={styles.footerSocialsLink}>
                             <img src="/images/footer/twitter.svg" alt="" />
                         </a>
                     </div>
@@ -35,7 +35,7 @@ export const FooterComponent = () => {
                 <div className="container">
                     <div className={styles.footerBottomContent}>
                         <span className={styles.footerBottomElement}>Maroon © 2020 Все права защищены</span>
-                        <a href="/" className={styles.footerBottomElement}>
+                        <a target={'_blank'} href="https://github.com/lonelyRei" className={styles.footerBottomElement}>
                             Политика конфиденциальности
                         </a>
                     </div>

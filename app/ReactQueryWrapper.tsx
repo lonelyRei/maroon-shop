@@ -3,6 +3,7 @@
 import { QueryClient, QueryClientProvider } from 'react-query'
 import React, { useEffect } from 'react'
 import useRecentlyWatchedStore from '@/src/stores/recentlyWatchedStore'
+import useCardStore from '@/src/stores/cardStore'
 
 const queryClient = new QueryClient()
 interface Props {
@@ -13,10 +14,13 @@ const ReactQueryWrapper = ({ children }: Props) => {
     const loadRecentlyWatchedFromLocalStore = useRecentlyWatchedStore(
         (state) => state.loadRecentlyWatchedFromLocalStore
     )
+    const loadProductsFromLocalStorage = useCardStore((state) => state.loadProductsFromLocalStorage)
+
     useEffect(() => {
-        console.log('Вызываем проверку состояния')
         loadRecentlyWatchedFromLocalStore()
+        loadProductsFromLocalStorage()
     }, [])
+
     return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
 }
 

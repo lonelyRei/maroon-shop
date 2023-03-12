@@ -1,4 +1,5 @@
 import styles from './Contacts.module.css'
+import { authorGithubLink } from '@/src/components/common/types'
 
 export const Contacts = () => {
     return (
@@ -25,13 +26,13 @@ export const Contacts = () => {
                             <span className={styles.text}>info@maroon.ru</span>
                         </div>
                         <div className={styles.social}>
-                            <a href="/" className={styles.socialsLink}>
+                            <a target={'_blank'} href={authorGithubLink} className={styles.socialsLink}>
                                 <img src="/images/footer/facebook.svg" alt="" />
                             </a>
-                            <a href="/" className={styles.socialsLink}>
+                            <a target={'_blank'} href={authorGithubLink} className={styles.socialsLink}>
                                 <img src="/images/footer/instagram.svg" alt="" />
                             </a>
-                            <a href="/" className={styles.socialsLink}>
+                            <a target={'_blank'} href={authorGithubLink} className={styles.socialsLink}>
                                 <img src="/images/footer/twitter.svg" alt="" />
                             </a>
                         </div>

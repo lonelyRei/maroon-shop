@@ -1,4 +1,5 @@
 import styles from './Follow.module.css'
+import { authorGithubLink } from '@/src/components/common/types'
 export const Follow = () => {
     return (
         <div className={styles.follow}>
@@ -29,7 +30,7 @@ export const Follow = () => {
                         <p className={styles.followText}>
                             Подпишитесь на наш аккаунт @marooncare и узнавайте о новинках и акциях первыми
                         </p>
-                        <a href="/" className="customButton">
+                        <a target={'_blank'} href={authorGithubLink} className="customButton">
                             Подписаться
                         </a>
                     </div>

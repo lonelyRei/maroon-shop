@@ -1,5 +1,5 @@
 enum siteRoutes {
-    catalog = '/catalog',
+    catalog = '/',
     about = '/about',
     shops = '/shops',
     contacts = '/contacts',
@@ -43,3 +43,5 @@ export interface INavItem {
     href: string
     name: string
 }
+
+export const authorGithubLink: string = 'https://github.com/lonelyRei'

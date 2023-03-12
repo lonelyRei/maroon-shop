@@ -1,0 +1,55 @@
+.cardOuter {
+    padding-top: 40px;
+    margin-bottom: 140px;
+}
+.cardTitle, .emptyCard {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    color: #122947;
+    margin-bottom: 50px;
+}
+
+.emptyCard {
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .cardOuter {
+        padding-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .cardOuter {
+        margin-bottom: 80px;
+    }
+    .cardTitle {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cardOuter {
+        margin-bottom: 60px;
+    }
+    .cardTitle {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cardOuter {
+        margin-bottom: 30px;
+    }
+}

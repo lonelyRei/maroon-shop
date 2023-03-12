@@ -43,7 +43,7 @@
     line-height: 125%;
     color: #122947;
     margin-bottom: 15px;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 .productCategory {
@@ -103,6 +103,9 @@
     }
     .productImage {
         max-height: 300px;
+    }
+    .productImageItem {
+        max-width: 100%;
     }
     .productAbout div {
         margin-bottom: 20px;

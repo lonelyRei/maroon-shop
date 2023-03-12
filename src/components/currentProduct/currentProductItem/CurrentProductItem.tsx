@@ -1,22 +1,25 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './CurrentProductItem.module.css'
 import { IProductResponse } from '@/src/API/types'
 import { Button, Popover } from 'antd'
+import useCardStore from '@/src/stores/cardStore'
+import Link from 'next/link'
 
 const CurrentProductItem: React.FC<ICurrentProductProps> = ({ data }: ICurrentProductProps) => {
     const [isInCard, setIsInCard] = useState<boolean>(false)
 
-    const handleAddInCard = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        console.log('Добавить товар в корзину')
-        e.preventDefault()
-        setIsInCard(true)
-    }
+    const addProductInCard = useCardStore((state) => state.addProductInCard)
+    const isProductInCard = useCardStore((state) => state.isProductInCard)
 
-    const handleRemoveFromCard = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        console.log('Удалить товар из корзины')
+    useEffect(() => {
+        setIsInCard(isProductInCard(data.id))
+    }, [])
+
+    const handleAddInCard = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault()
-        setIsInCard(false)
+        addProductInCard(data)
+        setIsInCard(true)
     }
 
     return (
@@ -55,9 +58,11 @@ const CurrentProductItem: React.FC<ICurrentProductProps> = ({ data }: ICurrentPr
                         <div className={styles.productOptions}>
                             <span className={styles.productPrice}>{data.price} ₽</span>
                             {isInCard ? (
-                                <button className={styles.button + ' customButton'} onClick={handleRemoveFromCard}>
-                                    Удалить из корзины
-                                </button>
+                                <div style={{ display: 'flex' }}>
+                                    <Link className={styles.button + ' customButton'} href="/card">
+                                        Перейти к корзине
+                                    </Link>
+                                </div>
                             ) : (
                                 <button className={styles.button + ' customButton'} onClick={handleAddInCard}>
                                     Добавить в корзину
