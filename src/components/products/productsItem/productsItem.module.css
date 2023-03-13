@@ -117,7 +117,6 @@
     }
     .productPrice {
         width: 100% !important;
-        flex: 1 1 100% !important;
         justify-content: center !important;
         align-items: center;
     }
@@ -138,7 +137,4 @@
 }
 
 @media screen and (max-width: 360px) {
-    .productImage {
-        height: 80px;
-    }
 }
