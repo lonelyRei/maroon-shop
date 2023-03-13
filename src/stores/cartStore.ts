@@ -27,19 +27,16 @@ const PRODUCTS_IN_CART = 'PRODUCTS_IN_CART'
 const useCartStore = create<ICartStore>((set, get) => ({
     products: [],
     addProductInCart(product: IProductResponse) {
-        console.log('addProductInCart')
         const newProducts = [...get().products, product]
         set({ products: newProducts })
         localStorage.setItem(PRODUCTS_IN_CART, JSON.stringify(get().products))
     },
     removeProductById(id: number) {
-        console.log('removeProductById')
         const newProducts = get().products.filter((product: IProductResponse) => product.id !== id)
         set({ products: newProducts })
         localStorage.setItem(PRODUCTS_IN_CART, JSON.stringify(get().products))
     },
     loadProductsFromLocalStorage() {
-        console.log('loadProductsFromLocalStorage')
         localStorage.getItem(PRODUCTS_IN_CART)
             ? set({
                   products: JSON.parse(localStorage.getItem(PRODUCTS_IN_CART)!),
@@ -48,7 +45,6 @@ const useCartStore = create<ICartStore>((set, get) => ({
         return get().products
     },
     isProductInCart(id: number) {
-        console.log('isProductInCart')
         return Boolean(
             get().products.find((element) => {
                 return element.id === id
