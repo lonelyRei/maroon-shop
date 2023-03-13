@@ -7,19 +7,8 @@
     <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/catalog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/catalog/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/contacts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/profile/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/shops/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/shops/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/mplus/MPLUS1p-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +22,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2MmPdtNammz3QCDTNPkR8IXW0ED" />
   <component name="ProjectLevelVcsManager">
@@ -82,7 +71,7 @@
       <workItem from="1678522746203" duration="24276000" />
       <workItem from="1678601524649" duration="8545000" />
       <workItem from="1678707027052" duration="5022000" />
-      <workItem from="1678719944702" duration="4530000" />
+      <workItem from="1678719944702" duration="4792000" />
     </task>
     <task id="LOCAL-00001" summary="Страница отдельного товара">
       <created>1678564293873</created>

@@ -3,7 +3,7 @@ const Page = () => {
     return (
         <div>
             <div className="container">
-                <span>Страница "О нас"</span>
+                <span>Страница о нас</span>
             </div>
         </div>
     )
