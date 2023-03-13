@@ -15,7 +15,7 @@ export const Cart = () => {
                 <h3 className={styles.cartTitle}>Корзина</h3>
                 {products.length > 0 ? (
                     products.map((product) => {
-                        return <CartItem key={product.id} item={product} />
+                        return <CartItem key={product.item.id} product={product} />
                     })
                 ) : (
                     <div className={styles.emptyCart}>
