@@ -1,5 +1,6 @@
 import styles from './Follow.module.css'
 import { authorGithubLink } from '@/src/components/common/types'
+
 export const Follow = () => {
     return (
         <div className={styles.follow}>

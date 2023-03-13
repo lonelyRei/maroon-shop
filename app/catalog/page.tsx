@@ -1,5 +1,6 @@
+// Компонент, отображаемый по маршруту '/catalog'
 const Page = () => {
-    return <div>Catalog 32134</div>
+    return <div>Каталог</div>
 }
 
 export default Page

@@ -3,6 +3,7 @@ import styles from './CurrentProduct.module.css'
 import { IProductResponse } from '@/src/API/types'
 import CurrentProductItem from '@/src/components/currentProduct/currentProductItem/CurrentProductItem'
 
+// Компонент конкретного товара (для страницы с детальным отображением)
 export const CurrentProduct: React.FC<ICurrentProduct> = ({ isError, isLoading, isSuccess, data }: ICurrentProduct) => {
     if (isError) {
         return (
@@ -27,9 +28,17 @@ export const CurrentProduct: React.FC<ICurrentProduct> = ({ isError, isLoading, 
     }
 }
 
+// Пропсы компонента
 interface ICurrentProduct {
+    // Флаг успешности запроса
     isSuccess: boolean
+
+    // Флаг состояния загрузки
     isLoading: boolean
+
+    // Флаг ошибки
     isError: boolean
+
+    // Данные для рендеринга
     data: IProductResponse | undefined
 }

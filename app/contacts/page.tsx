@@ -1,5 +1,6 @@
+// Компонент, отображаемый по маршруту '/contacts'
 const Page = () => {
-    return <div>Contacts 124142</div>
+    return <div>Страница контакты</div>
 }
 
 export default Page

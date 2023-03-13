@@ -3,6 +3,7 @@ import { Follow } from '@/src/components/follow/follow'
 import RecentlyWatched from '@/src/components/recentlyWatched/RecentlyWatched'
 import { Contacts } from '@/src/components/contacts/Contacts'
 
+// Компонент главной страницы по маршруту '/'
 export default function MainPage() {
     return (
         <div>

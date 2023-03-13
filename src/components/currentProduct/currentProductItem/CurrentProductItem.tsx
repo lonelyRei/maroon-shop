@@ -3,23 +3,34 @@ import React, { useEffect, useState } from 'react'
 import styles from './CurrentProductItem.module.css'
 import { IProductResponse } from '@/src/API/types'
 import { Button, Popover } from 'antd'
-import useCardStore from '@/src/stores/cardStore'
+import usecartStore from '@/src/stores/cartStore'
 import Link from 'next/link'
 
+// Компонент товара для детального отображения (отвечает за рендеринг)
 const CurrentProductItem: React.FC<ICurrentProductProps> = ({ data }: ICurrentProductProps) => {
-    const [isInCard, setIsInCard] = useState<boolean>(false)
+    // Состояние нахождения продукта в корзине
+    const [isInCart, setIsInCart] = useState<boolean>(false)
 
-    const addProductInCard = useCardStore((state) => state.addProductInCard)
-    const isProductInCard = useCardStore((state) => state.isProductInCard)
+    // Метод для добавления товара в корзину
+    const addProductInCart = usecartStore((state) => state.addProductInCart)
 
+    // Метод проверки нахождения товара в корзине
+    const isProductInCart = usecartStore((state) => state.isProductInCart)
+
+    // При монтировании компонента проверяем находится ли он в корзине
     useEffect(() => {
-        setIsInCard(isProductInCard(data.id))
+        setIsInCart(isProductInCart(data.id))
     }, [])
 
-    const handleAddInCard = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    // Хендлер добавления товара в корзину
+    const handleAddInCart = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault()
-        addProductInCard(data)
-        setIsInCard(true)
+
+        // Добавляем товар в корзину
+        addProductInCart(data)
+
+        // Обновляем состояние
+        setIsInCart(true)
     }
 
     return (
@@ -57,14 +68,14 @@ const CurrentProductItem: React.FC<ICurrentProductProps> = ({ data }: ICurrentPr
                         </div>
                         <div className={styles.productOptions}>
                             <span className={styles.productPrice}>{data.price} ₽</span>
-                            {isInCard ? (
+                            {isInCart ? (
                                 <div style={{ display: 'flex' }}>
-                                    <Link className={styles.button + ' customButton'} href="/card">
+                                    <Link className={styles.button + ' customButton'} href="/cart">
                                         Перейти к корзине
                                     </Link>
                                 </div>
                             ) : (
-                                <button className={styles.button + ' customButton'} onClick={handleAddInCard}>
+                                <button className={styles.button + ' customButton'} onClick={handleAddInCart}>
                                     Добавить в корзину
                                 </button>
                             )}
@@ -76,7 +87,9 @@ const CurrentProductItem: React.FC<ICurrentProductProps> = ({ data }: ICurrentPr
     )
 }
 
+// Пропсы компонента
 interface ICurrentProductProps {
+    // Данные для рендеринга
     data: IProductResponse
 }
 

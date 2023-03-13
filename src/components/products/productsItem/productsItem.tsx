@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from './productsItem.module.css'
 import { IProductResponse } from '@/src/API/types'
 
+// Компонент конкретного элемента списка продуктов
 export const ProductsItem: React.FC<IProductsItemProps> = ({ element }: IProductsItemProps) => {
     return (
         <Link href={`/catalog/${element.id}`} className={styles.product}>
@@ -27,6 +28,8 @@ export const ProductsItem: React.FC<IProductsItemProps> = ({ element }: IProduct
     )
 }
 
+// Пропсы компонента
 interface IProductsItemProps {
+    // Данные для рендеринга
     element: IProductResponse
 }

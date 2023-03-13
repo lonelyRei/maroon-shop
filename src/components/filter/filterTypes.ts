@@ -1,3 +1,4 @@
+// Перечисление категорий товаров
 export enum categories {
     man = "men's clothing",
     jewelery = 'jewelery',
@@ -6,4 +7,5 @@ export enum categories {
     all = 'all',
 }
 
+// Список категорий товаров
 export const filterOptions: string[] = [categories.man, categories.women, categories.jewelery, categories.electronics]

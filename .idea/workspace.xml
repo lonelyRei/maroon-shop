@@ -5,24 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара">
-      <change afterPath="$PROJECT_DIR$/app/card/card.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/shops/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/card.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/cardItem/CardItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/card/cardItem/cardItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/cardStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/cart/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart/Cart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/ReactQueryWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ReactQueryWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/card/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/card/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/card/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/cart/cart.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/card/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/catalog/[productId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/catalog/[productId]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/catalog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/catalog/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contacts/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/profile/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/profile/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/shops/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/shops/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/header/card.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/header/cart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/productsAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/productsAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/Card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cart.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/cardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cartItem/CartItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/cardItem/cardItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cartItem/cartItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/types.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contacts/Contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/Contacts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/currentProduct/CurrentProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/CurrentProduct.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/Filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/Filter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/filterTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/filterTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/follow/follow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/follow/follow.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/Products.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/catalogProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/catalogProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/productsItem/productsItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/productsItem/productsItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/recentlyWatched/RecentlyWatched.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recentlyWatched/RecentlyWatched.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recentlyWatched/recentlyWatchedInner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recentlyWatched/recentlyWatchedInner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useElementWidth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useFilteredProducts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFilteredProducts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/cardStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/cartStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/recentlyWatchedStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/recentlyWatchedStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +55,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2MmPdtNammz3QCDTNPkR8IXW0ED" />
   <component name="ProjectLevelVcsManager">
@@ -95,6 +118,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Страница отдельного товара" />

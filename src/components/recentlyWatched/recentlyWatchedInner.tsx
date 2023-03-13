@@ -6,6 +6,7 @@ import { ProductsItem } from '@/src/components/products/productsItem/productsIte
 import { Col, Row } from 'antd'
 import styles from './RecentlyWatched.module.css'
 
+// Компонента со списком недавно просмотренных товаров (отвечает за рендер)
 const RecentlyWatchedInner: React.FC<IRecentlyWatchedInnerProps> = ({
     recentlyWatched,
 }: IRecentlyWatchedInnerProps) => {
@@ -33,7 +34,9 @@ const RecentlyWatchedInner: React.FC<IRecentlyWatchedInnerProps> = ({
     )
 }
 
+// Пропсы компонента
 interface IRecentlyWatchedInnerProps {
+    // Список товаров
     recentlyWatched: IProductResponse[]
 }
 

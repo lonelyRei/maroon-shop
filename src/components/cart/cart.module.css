@@ -1,8 +1,8 @@
-.cardOuter {
+.cartOuter {
     padding-top: 40px;
     margin-bottom: 140px;
 }
-.cardTitle, .emptyCard {
+.cartTitle, .emptyCart {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -12,7 +12,7 @@
     margin-bottom: 50px;
 }
 
-.emptyCard {
+.emptyCart {
     display: flex;
     min-height: 200px;
     justify-content: center;
@@ -22,34 +22,34 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .cardOuter {
+    .cartOuter {
         padding-top: 30px;
         margin-bottom: 100px;
     }
 }
 
 @media screen and (max-width: 1080px) {
-    .cardOuter {
+    .cartOuter {
         margin-bottom: 80px;
     }
-    .cardTitle {
+    .cartTitle {
         text-align: center;
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .cardOuter {
+    .cartOuter {
         margin-bottom: 60px;
     }
-    .cardTitle {
+    .cartTitle {
         text-align: center;
         margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .cardOuter {
+    .cartOuter {
         margin-bottom: 30px;
     }
 }

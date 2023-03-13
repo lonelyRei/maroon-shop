@@ -11,15 +11,20 @@ import { filterOptions } from '@/src/components/filter/filterTypes'
 import { CheckboxValueType } from 'antd/es/checkbox/Group'
 import { useFilteredProducts } from '@/src/hooks/useFilteredProducts'
 
+// Компонент каталога товаров
 export const Products: React.FC = () => {
+    // Запрос товаров
     const { isSuccess, data, isLoading, isError } = useQuery(['fetchProducts'], ProductsAPI.fetchProducts)
 
+    // Флаг открытости фильтра товаров
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
+    // Состояние фильтра
     const [filterState, setFilterState] = useState<IFilterState>({
         categories: filterOptions,
     })
 
+    // Отфильтрованные по категориям продукты
     const filteredProducts = useFilteredProducts(data, filterState, isLoading)
 
     return (
@@ -56,6 +61,8 @@ export const Products: React.FC = () => {
     )
 }
 
+// Интерфейс компонента
 export interface IFilterState {
+    // Список категорий
     categories: CheckboxValueType[]
 }

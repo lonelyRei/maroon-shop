@@ -1,3 +1,4 @@
+// Перечисление основных роутов сайта
 enum siteRoutes {
     catalog = '/',
     about = '/about',
@@ -5,6 +6,7 @@ enum siteRoutes {
     contacts = '/contacts',
 }
 
+// Ссылки для компонента футера
 export const footerNavItems: INavItem[] = [
     {
         href: siteRoutes.catalog,
@@ -24,6 +26,7 @@ export const footerNavItems: INavItem[] = [
     },
 ]
 
+// Ссылки для компонента шапки
 export const headerNavItems: INavItem[] = [
     {
         href: siteRoutes.catalog,
@@ -39,8 +42,12 @@ export const headerNavItems: INavItem[] = [
     },
 ]
 
+// Интерфейс навигационного элемента
 export interface INavItem {
+    // Ссылка
     href: string
+
+    // Имя
     name: string
 }
 

@@ -1,6 +1,8 @@
 import styles from './Footer.module.css'
 import Link from 'next/link'
 import { authorGithubLink, footerNavItems, INavItem } from '@/src/components/common/types'
+
+// Компонент footer
 export const FooterComponent = () => {
     return (
         <footer className={styles.footer}>

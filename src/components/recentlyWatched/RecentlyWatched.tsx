@@ -5,6 +5,7 @@ import styles from './RecentlyWatched.module.css'
 import RecentlyWatchedInner from '@/src/components/recentlyWatched/recentlyWatchedInner'
 import React from 'react'
 
+// Компонент с недавно просмотренными товарами
 const RecentlyWatched: React.FC<IRecentlyWatched> = ({ title }: IRecentlyWatched) => {
     const recentlyWatched = useRecentlyWatchedStore((store) => store.recentlyWatched)
 
@@ -18,7 +19,9 @@ const RecentlyWatched: React.FC<IRecentlyWatched> = ({ title }: IRecentlyWatched
     )
 }
 
+// Пропсы компонента
 interface IRecentlyWatched {
+    // Заголовок комопонента
     title: string
 }
 

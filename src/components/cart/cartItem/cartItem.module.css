@@ -1,4 +1,4 @@
-.cardItem {
+.cartItem {
     display: flex;
     margin-bottom: 40px;
     padding: 30px 20px;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.cardImage {
+.cartImage {
     max-width: 250px;
     max-height: 250px;
     margin-right: 40px;
@@ -15,25 +15,25 @@
     align-items: center;
 }
 
-.cardImageItem {
+.cartImageItem {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
 
-.cardItemInfo {
+.cartItemInfo {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
 
-.cardItemInfoTop {
+.cartItemInfoTop {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
 }
 
-.cardItemInfoBottom {
+.cartItemInfoBottom {
     display: flex;
     justify-content: space-between;
     flex: 0 1 auto;
@@ -41,7 +41,7 @@
     margin-top: 30px;
 }
 
-.cardItemTitle {
+.cartItemTitle {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -51,7 +51,7 @@
     margin-bottom: 20px;
 }
 
-.cardItemCategory {
+.cartItemCategory {
     font-family: 'Mplus 1p', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -65,7 +65,7 @@
     width: 30%;
 }
 
-.cardItemPrice {
+.cartItemPrice {
     font-family: 'Mplus 1p', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -76,40 +76,40 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .cardItemInfo {
+    .cartItemInfo {
         width: 40%;
     }
 }
 
 @media screen and (max-width: 1080px) {
-    .cardItemTitle {
+    .cartItemTitle {
         font-size: 24px;
 
     }
     .description {
         width: auto !important;
     }
-    .cardItemPrice {
+    .cartItemPrice {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .cardImage {
+    .cartImage {
         max-width: 150px;
         max-height: 150px;
         margin-right: 30px;
     }
-    .cardItemTitle {
+    .cartItemTitle {
         font-size: 16px;
         margin-bottom: 10px;
         line-height: 115%;
     }
-    .cardItemCategory {
+    .cartItemCategory {
         font-size: 12px;
         margin-bottom: 20px;
     }
-    .cardItemInfo {
+    .cartItemInfo {
         width: 60%;
     }
     .remove {
@@ -117,38 +117,38 @@
         padding: 6px !important;
         font-size: 12px !important;
     }
-    .cardItemInfoBottom {
+    .cartItemInfoBottom {
         margin-top: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .cardItemPrice {
+    .cartItemPrice {
         margin-right: 0;
         margin-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .cardItem {
+    .cartItem {
         padding: 15px;
         flex-direction: column;
     }
-    .cardImage {
+    .cartImage {
         margin: 0 0 20px 0;
     }
-    .cardItemTitle {
+    .cartItemTitle {
         font-size: 14px;
         text-align: center;
     }
-    .cardItemCategory {
+    .cartItemCategory {
         text-align: center;
         margin-bottom: 10px;
     }
-    .cardItemInfoBottom {
+    .cartItemInfoBottom {
         margin-top: 10px;
     }
-    .cardItemPrice {
+    .cartItemPrice {
         margin-bottom: 10px;
     }
 }

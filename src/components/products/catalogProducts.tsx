@@ -4,6 +4,7 @@ import { ProductsItem } from '@/src/components/products/productsItem/productsIte
 import styles from './Products.module.css'
 import { Col, Row } from 'antd'
 
+// Компонент списка продуктов (отвечает за рендеринг)
 export const CatalogProducts: React.FC<ICatalogProductsProps> = ({ isError, isLoading, isSuccess, data }) => {
     if (isLoading) {
         return <div className={styles.loading}>Идет загрузка товаров...</div>
@@ -30,9 +31,17 @@ export const CatalogProducts: React.FC<ICatalogProductsProps> = ({ isError, isLo
     }
 }
 
+// Пропсы компонента
 interface ICatalogProductsProps {
+    // Флаг ошибки
     isError: boolean
+
+    // Флаг загрузки
     isLoading: boolean
+
+    // Флаг успешности операции запроса на бэк
     isSuccess: boolean
+
+    // Данные для рендеринга
     data: IProductResponse[] | undefined
 }

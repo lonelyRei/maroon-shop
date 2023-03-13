@@ -2,8 +2,8 @@ import styles from './Header.module.css'
 import Link from 'next/link'
 import { headerNavItems, INavItem } from '@/src/components/common/types'
 
+// Компонент шапки
 export const HeaderComponent = () => {
-    // ToDo: Сделать бургер
     return (
         <header className={styles.header}>
             <div className="container">
@@ -21,15 +21,24 @@ export const HeaderComponent = () => {
                                 </Link>
                             )
                         })}
-                        <Link href="/profile" className={styles.navItem}>
+                        <Link href={headerLinks.profile} className={styles.navItem}>
                             <img src="/images/header/profile.svg" alt="" className={styles.img} />
                         </Link>
-                        <Link href="/card" className={styles.navItem}>
-                            <img src="/images/header/card.svg" alt="" className={styles.img} />
+                        <Link href={headerLinks.cart} className={styles.navItem}>
+                            <img src="/images/header/cart.svg" alt="" className={styles.img} />
                         </Link>
                     </nav>
                 </div>
             </div>
         </header>
     )
+}
+
+// Ссылки для компонента header
+enum headerLinks {
+    // Ссылка на корзину
+    cart = '/cart',
+
+    // Ссылка на профиль
+    profile = '/profile',
 }
