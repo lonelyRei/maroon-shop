@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/Cart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/cartItem/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cartItem/CartItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart/cartItem/cartItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cartItem/cartItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/cartStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/cartStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/currentProductItem/CurrentProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/productsItem/productsItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/productsItem/productsItem.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,8 @@
       <workItem from="1678452789638" duration="32455000" />
       <workItem from="1678522746203" duration="24276000" />
       <workItem from="1678601524649" duration="8545000" />
-      <workItem from="1678707027052" duration="4648000" />
+      <workItem from="1678707027052" duration="5022000" />
+      <workItem from="1678719944702" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="Страница отдельного товара">
       <created>1678564293873</created>

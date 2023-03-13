@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './CurrentProductItem.module.css'
 import { IProductResponse } from '@/src/API/types'
 import { Button, Popover } from 'antd'
-import usecartStore from '@/src/stores/cartStore'
+import useCartStore from '@/src/stores/cartStore'
 import Link from 'next/link'
 
 // Компонент товара для детального отображения (отвечает за рендеринг)
@@ -12,10 +12,10 @@ const CurrentProductItem: React.FC<ICurrentProductProps> = ({ data }: ICurrentPr
     const [isInCart, setIsInCart] = useState<boolean>(false)
 
     // Метод для добавления товара в корзину
-    const addProductInCart = usecartStore((state) => state.addProductInCart)
+    const addProductInCart = useCartStore((state) => state.addProductInCart)
 
     // Метод проверки нахождения товара в корзине
-    const isProductInCart = usecartStore((state) => state.isProductInCart)
+    const isProductInCart = useCartStore((state) => state.isProductInCart)
 
     // При монтировании компонента проверяем находится ли он в корзине
     useEffect(() => {

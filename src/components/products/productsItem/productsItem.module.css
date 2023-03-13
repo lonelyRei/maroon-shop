@@ -13,20 +13,21 @@
 
 .productImage {
     max-width: 100%;
-    height: 200px;
     margin-bottom: 20px;
 }
 
 .productImageItem {
     max-width: 100%;
-    height: 100%;
     object-fit: contain;
+    height: 200px;
 }
 
 .productInfo {
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex: 0 1 auto;
+    height: 100%;
 }
 
 .productInfoTop, .productInfoBottom {
@@ -42,8 +43,12 @@
     font-size: 16px;
     line-height: 145%;
     color: #122947;
-    margin-bottom: 15px;
-    height: 100px;
+    margin-bottom: 10px;
+    flex: 1 0 auto;
+}
+
+.productInfoBottom {
+    flex: 1 0 auto;
 }
 
 .productInfoTop .productInfoItem:first-child {
@@ -77,6 +82,7 @@
     font-size: 13px;
     line-height: 145%;
     color: #9A9DA0;
+    flex: 0 1 auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -86,7 +92,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .productImage {
+    .productImageItem {
         height: 130px;
     }
     .productTitle {
@@ -96,18 +102,18 @@
 
 @media screen and (max-width: 767px) {
     .productImage {
-        height: 100px;
         width: 100%;
         margin-bottom: 10px;
         display: flex;
         justify-content: center;
     }
+    .productImageItem {
+        height: 100px;
+    }
     .productInfoTop {
         flex-direction: column;
-        min-height: 180px;
         height: max-content;
         margin-bottom: 20px;
-        flex: 0 0 100px;
     }
     .productPrice {
         width: 100% !important;
@@ -117,7 +123,7 @@
     }
     .productTitle {
         margin-bottom: 10px;
-        overflow: hidden;
+        text-align: center;
     }
     .productInfoBottom {
         flex-direction: column;

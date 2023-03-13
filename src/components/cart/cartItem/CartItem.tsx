@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React from 'react'
 import styles from './cartItem.module.css'
 import Link from 'next/link'
 import useCartStore, { ICardItem } from '@/src/stores/cartStore'
