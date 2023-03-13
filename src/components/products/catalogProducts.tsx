@@ -2,12 +2,16 @@ import React, { ReactNode } from 'react'
 import { IProductResponse } from '@/src/API/types'
 import { ProductsItem } from '@/src/components/products/productsItem/productsItem'
 import styles from './Products.module.css'
-import { Col, Row } from 'antd'
+import { Col, Row, Spin } from 'antd'
 
 // Компонент списка продуктов (отвечает за рендеринг)
 export const CatalogProducts: React.FC<ICatalogProductsProps> = ({ isError, isLoading, isSuccess, data }) => {
     if (isLoading) {
-        return <div className={styles.loading}>Идет загрузка товаров...</div>
+        return (
+            <div className={styles.loading}>
+                <Spin />
+            </div>
+        )
     } else if (isError) {
         return <div className={styles.error}>Произошла ошибка загрузки товаров :(</div>
     } else if (isSuccess) {

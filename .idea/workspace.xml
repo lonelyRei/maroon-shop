@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара">
+      <change afterPath="$PROJECT_DIR$/app/[...not-found]/notFound.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/[...not-found]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/currentProduct/CurrentProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/currentProduct/CurrentProduct.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/products/catalogProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/catalogProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +53,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\projects\maroon-shop\app\[...not-found]" />
       <recent name="D:\code\projects\maroon-shop\src\components\currentProduct\currentProductItem" />
       <recent name="D:\code\projects\maroon-shop\app\catalog" />
       <recent name="D:\code\projects\maroon-shop\public\images\header" />
       <recent name="D:\code\projects\maroon-shop\public" />
-      <recent name="D:\code\projects\maroon-shop\src\components\header" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,6 +72,7 @@
       <workItem from="1678452789638" duration="32455000" />
       <workItem from="1678522746203" duration="24276000" />
       <workItem from="1678601524649" duration="8545000" />
+      <workItem from="1678707027052" duration="1266000" />
     </task>
     <task id="LOCAL-00001" summary="Страница отдельного товара">
       <created>1678564293873</created>

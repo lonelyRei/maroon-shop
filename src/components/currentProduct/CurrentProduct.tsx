@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './CurrentProduct.module.css'
 import { IProductResponse } from '@/src/API/types'
 import CurrentProductItem from '@/src/components/currentProduct/currentProductItem/CurrentProductItem'
+import { Spin } from 'antd'
 
 // Компонент конкретного товара (для страницы с детальным отображением)
 export const CurrentProduct: React.FC<ICurrentProduct> = ({ isError, isLoading, isSuccess, data }: ICurrentProduct) => {
@@ -14,7 +15,7 @@ export const CurrentProduct: React.FC<ICurrentProduct> = ({ isError, isLoading, 
     } else if (isLoading) {
         return (
             <div className={styles.loading}>
-                <span>Идет загрузка...</span>
+                <Spin />
             </div>
         )
     } else if (isSuccess && data) {

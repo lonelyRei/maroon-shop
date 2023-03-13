@@ -1,0 +1,29 @@
+.notFoundInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    height: 100%;
+    min-height: 300px;
+}
+
+.notFoundText, .notFoundLink {
+    text-align: center;
+}
+
+.notFoundText {
+    margin-bottom: 30px;
+    line-height: 68px;
+    color: #122947;
+}
+
+.notFoundLink {
+    font-family: 'Mplus 1p', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #122947;
+    text-decoration: underline;
+}
