@@ -1,6 +1,12 @@
 // Компонент, отображаемый по маршруту '/shops'
 const Page = () => {
-    return <div>Страница магазинов</div>
+    return (
+        <div>
+            <div className="container">
+                <span>Страница "Магазины"</span>
+            </div>
+        </div>
+    )
 }
 
 export default Page

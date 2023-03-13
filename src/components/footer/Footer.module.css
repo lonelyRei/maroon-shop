@@ -55,6 +55,15 @@
     color: #959595;
 }
 
+.footerSocials {
+    display: flex;
+    align-items: center;
+}
+.footerSocialsImage {
+    width: 20px;
+    height: 20px;
+}
+
 @media screen and (max-width: 1200px) {
 
 }

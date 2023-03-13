@@ -22,13 +22,13 @@ export const FooterComponent = () => {
                     </div>
                     <div className={styles.footerSocials}>
                         <a target={'_blank'} href={authorGithubLink} className={styles.footerSocialsLink}>
-                            <img src="/images/footer/facebook.svg" alt="" />
+                            <img className={styles.footerSocialsImage} src="/images/footer/facebook.svg" alt="" />
                         </a>
                         <a target={'_blank'} href={authorGithubLink} className={styles.footerSocialsLink}>
-                            <img src="/images/footer/instagram.svg" alt="" />
+                            <img className={styles.footerSocialsImage} src="/images/footer/instagram.svg" alt="" />
                         </a>
                         <a target={'_blank'} href={authorGithubLink} className={styles.footerSocialsLink}>
-                            <img src="/images/footer/twitter.svg" alt="" />
+                            <img className={styles.footerSocialsImage} src="/images/footer/twitter.svg" alt="" />
                         </a>
                     </div>
                 </div>

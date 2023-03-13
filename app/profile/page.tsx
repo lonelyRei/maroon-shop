@@ -1,4 +1,10 @@
 // Компонент, отображаемый по маршруту '/profile'
 export default function Page() {
-    return <div>Страница личного кабинета</div>
+    return (
+        <div>
+            <div className="container">
+                <span>Страница личного кабинета</span>
+            </div>
+        </div>
+    )
 }

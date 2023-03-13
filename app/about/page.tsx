@@ -1,6 +1,12 @@
 // Компонент, отображаемый по маршруту '/about'
 const Page = () => {
-    return <div>Страница about2222</div>
+    return (
+        <div>
+            <div className="container">
+                <span>Страница "О нас"</span>
+            </div>
+        </div>
+    )
 }
 
 export default Page
