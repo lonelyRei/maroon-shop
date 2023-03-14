@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4c4e59e-ea7a-4390-bab5-92cda1adf80b" name="Changes" comment="Страница отдельного товара">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart/cart.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cart.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cart/cartItem/cartItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/cartItem/cartItem.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
       <workItem from="1678601524649" duration="8545000" />
       <workItem from="1678707027052" duration="5022000" />
       <workItem from="1678719944702" duration="5411000" />
-      <workItem from="1678777684797" duration="208000" />
+      <workItem from="1678777684797" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Страница отдельного товара">
       <created>1678564293873</created>
