@@ -175,7 +175,8 @@
         flex-direction: column;
     }
     .cartImage {
-        margin: 0 0 50px 0;
+        height: 150px;
+        margin: 0 0 40px 0;
     }
     .cartItemTitle {
         font-size: 14px;
